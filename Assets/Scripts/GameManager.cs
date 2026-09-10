@@ -45,14 +45,11 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Vendiendo Basura individual..");
             money += trashPrice;
-            Debug.Log("money : " + money);
         }
         else if (item.CompareTag("Bag"))
         {
             Bag bag = item.GetComponent<Bag>();
             money += bag.count * trashPrice;
-            Debug.Log("BOLSAAAA..");
-            Debug.Log("money : " + money);
 
         }
     }

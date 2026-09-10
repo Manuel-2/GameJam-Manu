@@ -68,16 +68,11 @@ public class PlayerController : MonoBehaviour
 
         if (carryObject != null && carryObject.CompareTag("Bag"))
         {
-            Debug.Log("Guardando en bolsa");
             Bag bag = carryObject.GetComponent<Bag>();
             if (bag.count < bag.capacity)
             {
                 bag.count++;
                 Destroy(item.gameObject);
-            }
-            else
-            {
-                Debug.Log("llena");
             }
         }
 
